@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg  border-bottom border-body">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg  border-bottom border-body mb-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="img/duck.png" alt="Logo">
@@ -55,10 +55,10 @@
     <div class="container">
       <div class="row">
         <!-- colonna con tabella -->
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-lg-8">
           <!-- header con bottone -->
           <div class="row align-items-center my-3">
-            <div class="col-auto me-auto">
+            <div class="col-auto  me-auto">
               <h1>Catalogo Libri</h1>
             </div>
 
@@ -276,11 +276,24 @@
         </div>
 
         <!-- colonna bonus -->
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-4">
           <div class="card my-4">
             <h3 class="card-header fw-normal">Todo</h3>
             <div class="card-body">
-              
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <input type="checkbox" id="call" value="call-reception">
+                  <label class="ms-1" for="call">Chiamare segreteria</label>
+                </li>
+                <li class="list-group-item">
+                  <input type="checkbox" id="notice" value="Send-loan-notices">
+                  <label class="ms-1" for="notice">Mandare avvisi prestiti scaduti</label>
+                </li>
+                <li class="list-group-item">
+                  <input type="checkbox" id="order" value="order-book">
+                  <label class="ms-1" for="order">Ordinare nuovi libri</label>
+                </li>
+              </ul>
             </div>
           </div>
 
