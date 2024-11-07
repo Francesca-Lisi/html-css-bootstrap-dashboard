@@ -41,7 +41,7 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
           </form>
         </div>
       </div>
@@ -52,24 +52,53 @@
     <div class="container">
       <div class="row">
         <!-- colonna con tabella -->
-        <div class="col">
+        <div class="col-12">
           <!-- header con bottone -->
-          <div class="row">
-            <div class="col">
+          <div class="row align-items-center my-3">
+            <div class="col-auto me-auto">
               <h1>Catalogo Libri</h1>
             </div>
 
-            <div class="col">
-              <button></button>
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary align-self-end">Aggiungi Libro</button>
             </div>
           </div>
 
           <!-- tabella -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Titolo</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
 
         </div>
 
         <!-- colonna bonus -->
-        <div class="col"></div>
+        <div class="col-12"></div>
       </div>
     </div>
 
