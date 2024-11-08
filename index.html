@@ -63,7 +63,88 @@
             </div>
 
             <div class="col-auto">
-              <button type="button" class="btn btn-primary align-self-end">Aggiungi Libro</button>
+              <button type="button" class="btn btn-primary align-self-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Aggiungi Libro</button>
+              <div class="offcanvas w-100 offcanvas-end p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h2 class="my-4">Nuovo Libro</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <form action="#">
+                    <!-- Riga anagrafica -->
+                    <div class="row row-cols-2 my-3">
+                      <div class="col">
+                        <label for="firstname" class="form-label fw-medium">Nome Autore</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Inserisci il nome dell'autore">
+                      </div>
+                      <div class="col">
+                        <label for="lastname" class="form-label fw-medium">Cognome Autore</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Inserisci il cognome dell'autore">
+                      </div>
+                    </div>
+            
+                    <!-- Riga Titolo -->
+                    <div class="row my-3">
+                      <div class="col">
+                        <label for="Title" class="form-label fw-medium">Titolo</label>
+                        <input type="text" class="form-control" id="book-title" aria-describedby="btitle" placeholder="Inserisci il titolo del libro">
+                        <div id="btitle" class="form-text">Titolo versione italiana</div>
+                      </div>
+                    </div>
+            
+                    <!-- Riga dettagli: variazione mobile -->
+                    <div class="row row-cols-1 row-cols-lg-3 mb-3">
+                      <div class="col my-2">
+                        <label for="literary-genre" class="form-label fw-medium">Genere</label>
+                        <select class="form-select" aria-label="literary-genre">
+                          <option selected>Scegli il genere</option>
+                          <option value="1">Romanzo</option>
+                          <option value="2">Thriller</option>
+                          <option value="3">Commedia</option>
+                          <option value="1">Saggio</option>
+                          <option value="2">Biografia</option>
+                          <option value="3">Fantasy</option>
+                          <option value="1">Horror</option>
+                          <option value="2">Avventura</option>
+                          <option value="3">Giallo</option>
+                        </select>
+                      </div>
+            
+                      <div class="col my-2">
+                        <label for="year" class="form-label fw-medium">Anno di Pubblicazione</label>
+                        <input type="number" class="form-control" id="year" placeholder="Inserisci l'anno">
+                      </div>
+            
+                      <div class="col mb-4">
+                        <label for="code-isbn" class="form-label fw-medium">ISBN#</label>
+                        <input type="text" class="form-control" id="code-isbn" placeholder="Inserisci il codice ISBN#">
+                      </div>
+                    </div>
+            
+                    <hr class="mt-4">
+            
+                    <!-- Riga note e button -->
+                    <div class="row">
+                      <!-- text area -->
+                      <div class="col my-2">
+                        <label for="notes" class="form-label fw-medium">Note</label>
+                        <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="notes" style="height: 100px"></textarea>
+                        
+                        <!-- checkbox -->
+                        <div class="form-check my-3">
+                          <input type="checkbox" class="form-check-input" id="digital">
+                          <label class="form-check-label" for="digital">Disponibile anche in digitale</label>
+                        </div>
+                        
+                        <!-- button -->
+                        <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                      </div>
+                    </div>
+            
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
 
